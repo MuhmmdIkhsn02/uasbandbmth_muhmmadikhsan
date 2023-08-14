@@ -1,0 +1,264 @@
+body{
+  background-color: #a8a484 ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #a8a484;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+#body {
+  margin-top: 100px;
+}
+.bg-img{
+  background-image: url('images/album/album1.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+#box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 100px;
+}
+.box {
+  width: 700px;
+  height: 400px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text {
+  text-align: center;
+  padding: 25px;
+  font-size: 200%;
+  font-weight: bold;
+}
+.button1{
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color:#a8a484;
+}
+.button1:hover{
+  background-color:#a8a484;
+  color: white;
+  transition: 1s;
+}
+.trans{
+  border: none;
+  height: 1px;
+  background-color: transparent;
+  margin: 20px 0;
+}
+.button2 {
+  font-weight: bold;
+  display: block; /* Change display to block to center-align the button */
+  margin: 0 auto; /* Auto margins horizontally center the button */
+  background-color: #a8a484;
+  color: rgb(0, 0, 0);
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 3px solid #000000; /* Fix border declaration */
+}
+
+.button2:hover {
+  background-color: black;
+  color: #a8a484;
+  transition: background-color 1s, color 1s; /* Transition both background-color and color */
+}
+a{
+  text-decoration: none;
+}
+.container1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+	margin-top: 20px;
+  }
+  .block1 {
+	width: 350px;
+	height: 350px;
+	background-color: #a8a484;
+	margin: 50px;
+  }
+  .block1 h2{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+	color: black;
+	align-items: center;
+  }
+  .container2 {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+	margin-top: 20px;
+    }
+    
+    .block2 {
+      width: 350px;
+      height: 350px;
+      margin-bottom: 25px;
+      background-color: #a8a484;
+      margin: 50px;
+      text-align: center; /* Add this */
+    }
+    p, h1, h2, a{
+      font-weight: bold;
+      font-family: suffolkpunchregular,sans-serif;;
+    }
+    .privacy-policy {
+      position: fixed;
+      bottom: 20px; /* Position 20px from the bottom */
+      left: 20px; /* Position 20px from the left */
+      font-size: 16px;
+      color: rgb(82, 80, 80);
+      text-decoration: none;
+      background-color: #a8a484;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+    @media (max-width: 1000px){
+      nav{
+        padding: 0 40px 0 50px;
+      }
+    }
+    @media (max-width: 920px) {
+      nav .menu-btn i{
+        display: block;
+      }
+      #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+      nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #a8a484;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+      }
+      #click:checked ~ ul{
+        left: 0;
+      }
+      nav ul li{
+        width: 100%;
+        margin: 40px 0;
+      }
+      nav ul li a{
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      #click:checked ~ ul li a{
+        margin-left: 0px;
+      }
+      nav ul li a.active,
+      nav ul li a:hover{
+        background: none;
+        color: rgb(246, 241, 241);
+      }
+    .content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: -1;
+      width: 100%;
+      padding: 0 30px;
+      color: #1b1b1b;
+    }
+    .content div{
+      font-size: 40px;
+      font-weight: 700;
+    }
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        margin-top: 20px;
+        }
+        .container2 {
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        margin-top: 20px;
+        }
+    }
